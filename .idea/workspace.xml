@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddf1543-77b2-4310-a131-1a159116a46b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/A3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OSU CS261 A3 - S25.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SLNode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue_sa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue_sll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack_da.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack_sll.py" afterDir="false" />
+    <list default="true" id="0ddf1543-77b2-4310-a131-1a159116a46b" name="Changes" comment="Init Commit">
+      <change beforePath="$PROJECT_DIR$/sll.py" beforeDir="false" afterPath="$PROJECT_DIR$/sll.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kevbot606"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kevbot606/CS261-A3.git",
+    "accountId": "c64909c4-d333-4a39-ac04-336f2f79d8b2"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
@@ -66,12 +67,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746160839704</updated>
-      <workItem from="1746160840710" duration="1372000" />
+      <workItem from="1746160840710" duration="1609000" />
     </task>
+    <task id="LOCAL-00001" summary="Init Commit">
+      <option name="closed" value="true" />
+      <created>1746162343962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746162343962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/A3$sll.coverage" NAME="sll Coverage Results" MODIFIED="1746162057784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
