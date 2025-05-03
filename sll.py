@@ -82,7 +82,6 @@ class LinkedList:
 
     def insert_front(self, value: object) -> None:
         """
-        TODO: Write this implementation
         Inserts a new node at the beginning of the list.
         """
         # Getting current first node
@@ -94,7 +93,6 @@ class LinkedList:
 
     def insert_back(self, value: object) -> None:
         """
-        TODO: Write this implementation
         Adds a new node at the end of the list.
         """
         # Creating new node
@@ -112,7 +110,6 @@ class LinkedList:
 
     def insert_at_index(self, index: int, value: object) -> None:
         """
-        TODO: Write this implementation
         Inserts a new node at a specified index.
         """
         # Verifying valid index
@@ -129,7 +126,6 @@ class LinkedList:
 
     def remove_at_index(self, index: int) -> None:
         """
-        TODO: Write this implementation
         Removes the node at the specified index from the list.
         """
 
@@ -188,9 +184,21 @@ class LinkedList:
 
     def slice(self, start_index: int, size: int) -> "LinkedList":
         """
-        TODO: Write this implementation
+        Returns a new LinkedList with size number of nodes from the original list,
+        beginning with start_index.
         """
-        pass
+        # Verifying valid start index
+        if start_index < 0 or start_index >= self.length():
+            raise SLLException
+        elif start_index + size > self.length():
+            raise SLLException
+        else:
+            # Creating new, empty LinkedList
+            ll_slice = LinkedList()
+            for i in range(start_index, start_index + size):
+                ll_slice.insert_back(self.get_at_index(i).value)
+            return ll_slice
+
 
 
 # ------------------- BASIC TESTING -----------------------------------------
@@ -251,29 +259,29 @@ if __name__ == "__main__":
     # print("\n# count example 1")
     # lst = LinkedList([1, 2, 3, 1, 2, 2])
     # print(lst, lst.count(1), lst.count(2), lst.count(3), lst.count(4))
-
-    print("\n# find example 1")
-    lst = LinkedList(["Waldo", "Clark Kent", "Homer", "Santa Claus"])
-    print(lst)
-    print(lst.find("Waldo"))
-    print(lst.find("Superman"))
-    print(lst.find("Santa Claus"))
-
-    # print("\n# slice example 1")
-    # lst = LinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9])
-    # ll_slice = lst.slice(1, 3)
-    # print("Source:", lst)
-    # print("Start: 1 Size: 3 :", ll_slice)
-    # ll_slice.remove_at_index(0)
-    # print("Removed at index 0 :", ll_slice)
     #
-    # print("\n# slice example 2")
-    # lst = LinkedList([10, 11, 12, 13, 14, 15, 16])
-    # print("Source:", lst)
-    # slices = [(0, 7), (-1, 7), (0, 8), (2, 3), (5, 0), (5, 3), (6, 1)]
-    # for index, size in slices:
-    #     print("Start:", index, "Size:", size, end="")
-    #     try:
-    #         print(" :", lst.slice(index, size))
-    #     except:
-    #         print(" : exception occurred.")
+    # print("\n# find example 1")
+    # lst = LinkedList(["Waldo", "Clark Kent", "Homer", "Santa Claus"])
+    # print(lst)
+    # print(lst.find("Waldo"))
+    # print(lst.find("Superman"))
+    # print(lst.find("Santa Claus"))
+
+    print("\n# slice example 1")
+    lst = LinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    ll_slice = lst.slice(1, 3)
+    print("Source:", lst)
+    print("Start: 1 Size: 3 :", ll_slice)
+    ll_slice.remove_at_index(0)
+    print("Removed at index 0 :", ll_slice)
+
+    print("\n# slice example 2")
+    lst = LinkedList([10, 11, 12, 13, 14, 15, 16])
+    print("Source:", lst)
+    slices = [(0, 7), (-1, 7), (0, 8), (2, 3), (5, 0), (5, 3), (6, 1)]
+    for index, size in slices:
+        print("Start:", index, "Size:", size, end="")
+        try:
+            print(" :", lst.slice(index, size))
+        except:
+            print(" : exception occurred.")
