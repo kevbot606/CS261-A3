@@ -1,10 +1,9 @@
-# Name:
-# OSU Email:
+# Name: Kevin Coalwell
+# OSU Email: coalwelk@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
-
+# Assignment: A3 - Linked Lists, Stacks, Queues, & Deques
+# Due Date: 5.5.25
+# Description: SLL Queue Stack Implementation
 
 from SLNode import SLNode
 

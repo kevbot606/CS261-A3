@@ -1,10 +1,9 @@
-# Name:
-# OSU Email:
+# Name: Kevin Coalwell
+# OSU Email: coalwelk@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
-
+# Assignment: A3 - Linked Lists, Stacks, Queues, & Deques
+# Due Date: 5.5.25
+# Description: SA Queue Implementation
 
 # Note: Changing any part of the pre-implemented methods (besides adding  #
 #       default parameters) will cause the Gradescope tests to fail.      #
