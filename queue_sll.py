@@ -63,21 +63,42 @@ class Queue:
 
     def enqueue(self, value: object) -> None:
         """
-        TODO: Write this implementation
+        Adds a new element to the queue.
         """
-        pass
+        # Setting head to new node
+        if self.is_empty():
+            self._head = SLNode(value)
+            self._tail = self._head
+        # Capturing old tail and inserting new tail
+        else:
+            node = SLNode(value)
+            old_tail = self._tail
+            old_tail.next = node
+            self._tail = node
+
 
     def dequeue(self) -> object:
         """
-        TODO: Write this implementation
+        Removes the first element from the queue.
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            raise QueueException()
+        # Capturing old head before removing
+        else:
+            old_head = self._head
+            self._head = self._head.next
+            return old_head.value
 
     def front(self) -> object:
         """
-        TODO: Write this implementation
+        Return the first element from the queue.
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            raise QueueException()
+        else:
+            return self._head.value
 
 
 # ------------------- BASIC TESTING -----------------------------------------
