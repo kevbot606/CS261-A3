@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddf1543-77b2-4310-a131-1a159116a46b" name="Changes" comment="Implementing SLL Stack">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue_sll.py" beforeDir="false" afterPath="$PROJECT_DIR$/queue_sll.py" afterDir="false" />
-    </list>
+    <list default="true" id="0ddf1543-77b2-4310-a131-1a159116a46b" name="Changes" comment="Implementing SLL Queue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746160839704</updated>
       <workItem from="1746160840710" duration="1609000" />
-      <workItem from="1746388351896" duration="1002000" />
+      <workItem from="1746388351896" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <option name="closed" value="true" />
@@ -154,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746333547169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implementing SLL Queue">
+      <option name="closed" value="true" />
+      <created>1746389366041</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746389366041</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +186,8 @@
     <MESSAGE value="Finished SA Queue" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Implementing SLL Stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing SLL Stack" />
+    <MESSAGE value="Implementing SLL Queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing SLL Queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
