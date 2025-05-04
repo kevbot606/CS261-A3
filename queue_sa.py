@@ -1,16 +1,15 @@
-# Name:
-# OSU Email:
+# Name: Kevin Coalwell
+# OSU Email: coalwelk@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
-
+# Assignment: A3 - Linked Lists, Stacks, Queues, & Deques
+# Due Date: 5.5.25
+# Description: SA Queue Implementation
 
 # Note: Changing any part of the pre-implemented methods (besides adding  #
 #       default parameters) will cause the Gradescope tests to fail.      #
 
 
-from static_array import StaticArray
+from static_array import StaticArray, StaticArrayException
 
 
 class QueueException(Exception):
@@ -89,21 +88,62 @@ class Queue:
 
     def enqueue(self, value: object) -> None:
         """
-        TODO: Write this implementation
+        Adds a new value to the end/back of the queue.
         """
-        pass
+        # Checking if enough room
+        if self._current_size >= self._sa.length():
+            self.resize_up()
+
+        # Incrementing _back
+        self._back = self._increment(self._back)
+
+        # Adding element
+        self._sa.set(self._back, value)
+
+        # Incrementing size
+        self._current_size += 1
 
     def dequeue(self) -> object:
         """
         TODO: Write this implementation
+        Removes and returns the element at the front of the queue.
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            raise QueueException()
+        else:
+            elem = self._sa.get(self._front)
+
+            # Incrementing front
+            self._front = self._increment(self._front)
+
+            # Updating size
+            self._current_size -= 1
+
+            return elem
 
     def front(self) -> object:
         """
         TODO: Write this implementation
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            raise QueueException()
+        else:
+            elem = self._sa.get(self._front)
+        return elem
+
+    def resize_up(self):
+        """Resizes up the StaticArray and reindexes elements."""
+        new_sa = StaticArray(self._sa.length()*2)
+        old_index = self._front
+        for new_index in range(self._current_size):
+            new_sa[new_index] = self._sa[old_index]
+            old_index = self._increment(old_index)
+        self._sa = new_sa
+        self._front = 0
+        self._back = self._current_size - 1
+
 
     # The method below is optional, but recommended, to implement. #
     # You may alter it in any way you see fit.                     #

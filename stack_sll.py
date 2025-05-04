@@ -1,9 +1,9 @@
-# Name:
-# OSU Email:
+# Name: Kevin Coalwell
+# OSU Email: coalwelk@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment:
-# Due Date:
-# Description:
+# Assignment: A3 - Linked Lists, Stacks, Queues, & Deques
+# Due Date: 5.5.25
+# Description: SLL Stack Implementation
 
 
 from SLNode import SLNode
@@ -65,19 +65,36 @@ class Stack:
         """
         TODO: Write this implementation
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            self._head = SLNode(value)
+        # Setting new value as head
+        else:
+            old_top = self._head
+            self._head = SLNode(value, old_top)
 
     def pop(self) -> object:
         """
         TODO: Write this implementation
         """
-        pass
+        if self.is_empty():
+            raise StackException()
+        else:
+            new_head = self._head.next
+            old_head = self._head
+            self._head = new_head
+            return old_head.value
 
     def top(self) -> object:
         """
         TODO: Write this implementation
         """
-        pass
+        # Checking if empty
+        if self.is_empty():
+            raise StackException()
+        # Returning head
+        else:
+            return self._head.value
 
 
 # ------------------- BASIC TESTING -----------------------------------------
